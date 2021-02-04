@@ -1,0 +1,415 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.forgottenpassword{
+    position: absolute;
+width: 130px;
+height: 25px;
+left: 750px;
+top: 394px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 18px;
+
+color: #000000;
+
+}
+
+.logininput4{
+    position: absolute;
+width: 360px;
+height: 56px;
+left: 508px;
+top: 265px;
+
+background: #FFFFFF;
+border: 2px solid #000000;
+}
+.logininput5{
+    position: absolute;
+width: 360px;
+height: 56px;
+left: 508px;
+top: 347px;
+
+background: #FFFFFF;
+border: 2px solid #000000;
+}
+.logininput3{
+    position: absolute;
+width: 360px;
+height: 56px;
+left: 508px;
+top: 429px;
+
+background: #FFFFFF;
+border: 2px solid #000000;
+}
+.logininput6{
+    position: absolute;
+width: 360px;
+height: 56px;
+left: 511px;
+top: 510px;
+
+background: #FFFFFF;
+border: 2px solid #000000;
+}
+.logininput7{
+    position: absolute;
+    width: 360px;
+    height: 56px;
+left: 511px;
+top: 590px;
+
+background: #FFFFFF;
+border: 2px solid #000000;
+}
+.bttn2{
+    position: absolute;
+width: 276px;
+height: 18px;
+top: 683px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 26px;
+
+color: #FFFFFF;
+position: absolute;
+width: 360px;
+height: 50px;
+left: 510px;
+color: white;
+outline: none;
+
+background: rgba(128, 0, 128, 0.7);
+cursor: pointer;
+}
+.main-head{
+    height: 150px;
+    background: #FFF;
+   
+}
+
+.sidenav {
+    height: 100%;
+    background-color: #000;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+.main {
+    padding: 0px 10px;
+}
+.signup-card{
+    width: 100%;
+    margin: auto;
+    
+}
+.cardmain{
+    width: 50%;
+    margin: auto;
+}
+.cardd{
+    height: 100vh;
+}
+.uppercircle{
+position: absolute;
+width: 370px;
+height: 370px;
+left: 1034px;
+top: -184px;
+Opacity: 20%;
+background: url('../assets/94-941212_transparent-circle-tumblr-pink-circle-transparent-background.png');
+}
+.logininput{
+    position: absolute;
+width: 360px;
+height: 56px;
+left: 511px;
+top: 300px;
+outline: none;
+
+background: #FFFFFF;
+border: 2px solid #000000;
+}
+.logininput2{
+    position: absolute;
+width: 360px;
+height: 56px;
+left: 511px;
+top: 418px;
+outline: none;
+
+background: #FFFFFF;
+border: 2px solid #000000;
+}
+.emaillabel{
+    position: absolute;
+width: 116px;
+height: 23px;
+left: 540px;
+top: 273px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 23px;
+
+color: #000000;
+
+}
+.emaillabel2{
+    position: absolute;
+width: 89px;
+height: 23px;
+left: 540px;
+top: 393px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 23px;
+color: #000000;
+
+}
+.bttn{
+    position: absolute;
+width: 360px;
+height: 50px;
+left: 511px;
+top: 516px;
+color: white;
+outline: none;
+
+background: rgba(128, 0, 128, 0.7);
+cursor: pointer;
+}
+.containerr{
+    position: relative;
+    width: 1440px;
+}
+.lowercircle{
+position: absolute;
+width: 370px;
+height: 370px;
+left: -103px;
+top: 500px;
+background: url('../assets/94-941212_transparent-circle-tumblr-pink-circle-transparent-background.png');
+Opacity: 20%
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .signup-card{
+        width: 100%
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 10%;
+    }
+    .logininput4{
+        position: absolute;
+width: 300px;
+height: 56px;
+left: 31px;
+top: 185px;
+
+background: #FFFFFF;
+border: 2px solid #000000;
+    }
+    .logininput5{
+        position: absolute;
+width: 300px;
+height: 56px;
+left: 31px;
+top: 267px;
+
+background: #FFFFFF;
+border: 2px solid #000000;
+    }
+    .logininput3{
+        position: absolute;
+width: 300px;
+height: 56px;
+left: 31px;
+top: 349px;
+
+background: #FFFFFF;
+border: 2px solid #000000;
+    }
+    .logininput6{
+        position: absolute;
+width: 300px;
+height: 56px;
+left: 34px;
+top: 430px;
+
+background: #FFFFFF;
+border: 2px solid #000000;
+    }
+    .logininput7{
+        position: absolute;
+width: 300px;
+height: 56px;
+left: 34px;
+top: 510px;
+
+background: #FFFFFF;
+border: 2px solid #000000;
+    }
+    .bttn2{
+        position: absolute;
+width: 340px;
+height: 43px;
+left: 15px;
+top: 596px;
+background: rgba(128, 0, 128, 0.7);
+    }
+    .forgottenpassword{
+        position: absolute;
+width: 140px;
+height: 25px;
+left: 200px;
+top: 354px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 18px;
+
+color: #000000;
+
+    }
+    .register-form{
+        margin-top: 10%;
+    }
+    .signup-card{
+        width: 100%;
+        margin-top: 0;
+    }
+    .cardmain{
+        width: 100%;
+        margin: auto;
+    }
+    .uppercircle{
+        position: absolute;
+width: 395px;
+height: 384px;
+left: 89px;
+top: -210px;
+background-repeat: no-repeat;
+background: url('../assets/94-941212_transparent-circle-tumblr-pink-circle-transparent-background.png');
+border-radius: 192px;
+Opacity: 20%
+    }
+    .lowercircle{
+        position: absolute;
+width: 395px;
+height: 384px;
+left: -177px;
+top:550px;
+bottom: -10px;
+Opacity: 20%;
+
+background: url('../assets/94-941212_transparent-circle-tumblr-pink-circle-transparent-background.png');
+border-radius: 3px;
+    }
+    .containerr{
+        height: 100vh;
+    }
+    .logininput{
+        position: absolute;
+width: 300px;
+height: 56px;
+left: 27px;
+top: 261px;
+
+background: #FFFFFF;
+border: 2px solid #000000;
+    }
+    .logininput2{
+        position: absolute;
+width: 300px;
+height: 56px;
+left: 27px;
+top: 379px;
+
+background: #FFFFFF;
+border: 2px solid #000000;
+    }
+    .bttn{
+        position: absolute;
+width: 300px;
+height: 50px;
+left: 27px;
+top: 477px;
+
+background: rgba(128, 0, 128, 0.7);
+    }
+    
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 40%; 
+    }
+
+    .sidenav{
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        margin-top: 50%;
+    }
+
+    .register-form{
+        margin-top: 20%;
+    }
+}
+
+
+.login-main-text{
+    margin-top: 20%;
+    padding: 60px;
+    color: #fff;
+}
+.login-page-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: translateY(1%);
+}
+.login-main-text h2{
+    font-weight: 300;
+}
+
+.btn-black{
+    background-color: #000 !important;
+    color: #fff;
+}
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .7s;
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }
+  
