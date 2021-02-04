@@ -25,7 +25,7 @@
           {{type}}
         </div>
         <div class="text-caption text-grey">
-          Small plates, salads & sandwiches in an intimate setting.
+          {{currentUser.email}}
         </div>
       </q-card-section>
       <q-separator/>
