@@ -2,7 +2,7 @@
   <div>
       <div class="uppercircle"></div>
       <div class="lowercircle"></div>
-      <div v-if="show">
+      <div class="login" v-if="show">
       <q-input outlined label="Email" type="email" v-model="email" color="black" class="logininput">
            <template v-slot:prepend>
           <q-icon name="mail" />
@@ -58,7 +58,7 @@ export default {
             password: '',
             schoolname: '',
             confirmpassword: '',
-            show: false,
+            show: true,
             loading: false
         }
     },
@@ -68,7 +68,7 @@ export default {
                 this.$store.dispatch('auth/login',{email: this.email,password: this.password}).then((response) => {
                     alert(response)
                     this.loading = false
-                    // this.$router.push('/home')
+                    this.$router.push('/dashboard')
                 }).catch((err) => {
                     alert(err)
                     this.loading = false
@@ -85,7 +85,7 @@ export default {
                         })
                         alert(response)
                         this.loading = false
-                        // this.$router.push('/home')
+                        this.$router.push('/dashboard')
                     }).catch((err) => {
                         alert(err)
                         this.loading = false

@@ -21,8 +21,15 @@ export default{
             })
         })
     },
-    logged({commit}){
-        commit('AUTH_STATUS_CHANGE')
+    logOut({commit}){
+        return new Promise((resolve, reject) => {
+            firebase.auth.signOut().then((response) => {
+                resolve(response)
+                commit("LOG_OUT", response)
+            }).catch((err) => {
+                reject(err)
+            })
+        })
     }
 }
  

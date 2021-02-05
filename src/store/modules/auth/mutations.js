@@ -5,5 +5,9 @@ export default {
 		state.isLoggedIn = true;
         state.user = firebaseAuth().currentUser;
         
-	}
+    },
+    'LOG_OUT'(state) {
+        state.isLoggedIn = false;
+        state.user = null;
+    }
 }

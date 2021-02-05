@@ -2,19 +2,12 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="leftDrawerOpen = !leftDrawerOpen"
-        />
 
         <q-toolbar-title>
+         <span class="text-weight-bold">Data</span>save
         </q-toolbar-title>
 
-
+        <q-btn @click="logout">logout</q-btn>
       </q-toolbar>
     </q-header>
 
@@ -41,7 +34,18 @@
 
     <q-page-container>
       <router-view />
+       <q-footer bordered class="bg-white footer-toolbar text-primary">
+        <q-tabs no-caps active-color="primary" indicator-color="transparent" class="text-grey" v-model="tab">
+         <router-link tag="li" to='/staffs'><q-tab name="staff" icon="perm_identity" /></router-link> 
+         <router-link tag="li" to='/students'><q-tab name="students" icon="accessibility" /></router-link> 
+           <router-link tag="li" to='/dashboard'><q-tab name="dashboard" icon="dashboard" /></router-link> 
+          <router-link tag="li" to='/dashboard'><q-tab name="chat" icon="chat" /></router-link> 
+          <router-link tag="li" to='/dashboard'><q-tab name="settings" icon="circle_notifications"  /></router-link> 
+          <router-link tag="li" to='/dashboard'><q-tab name="settings" icon="settings"  /></router-link> 
+        </q-tabs>
+      </q-footer>
     </q-page-container>
+    
   </q-layout>
 </template>
 
@@ -56,12 +60,12 @@ const linksData = [
   },
   {
     title: 'Staff',
-    icon: 'accessibility',
-    link: '/staff'
+    icon: 'perm_identity',
+    link: '/staffs'
   },
   {
     title: 'Students',
-    icon: 'face',
+    icon: 'accessibility',
     link: '/students'
   },
   {
@@ -70,8 +74,8 @@ const linksData = [
     link: 'https://forum.quasar.dev'
   },
   {
-    title: 'Twitter',
-    icon: 'rss_feed',
+    title: 'Notifications',
+    icon: 'circle_notifications',
     link: 'https://twitter.quasar.dev'
   },
   {
@@ -79,13 +83,9 @@ const linksData = [
     icon: 'settings',
     link: 'https://facebook.quasar.dev'
   },
-  {
-    title: 'Quasar Awesome',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
-  }
 ];
 import {mapGetters} from 'vuex'
+import firebase from '../boot/config'
 export default {
   computed:{
       ...mapGetters({isLoggedIn:'auth/isLoggedIn', currentUser:'auth/currentUser'})
@@ -95,8 +95,16 @@ export default {
   data () {
     return {
       leftDrawerOpen: false,
-      essentialLinks: linksData
+      essentialLinks: linksData,
+      tab: 'dashboard'
     }
+  },
+  methods:{
+      logout(){
+        this.$store.dispatch('auth/logOut').then(() => {
+          this.$router.push('/')
+        })
+      }
   },
   created(){
     if(!this.isLoggedIn){
